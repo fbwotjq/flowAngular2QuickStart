@@ -1,5 +1,8 @@
 
 # 해석 ==> https://angular.io/docs/ts/latest/guide/architecture.html
+# 참조 
+ # ==> https://angular.io/docs/ts/latest/guide/user-input.html
+ # ==> http://learnangular2.com/events/
 
 1 . angularjs 2는 javscript 및 typescript, dart와 같은 javascript로 컴파일 되는 언어로 HTML안에서 CLIENT APPLICATION을 만들기 위한 FRAMEWORK
 2 . 몇개의 코어와 몇개의 부가 적인 라이브러리로 구성 되어 있다. 
