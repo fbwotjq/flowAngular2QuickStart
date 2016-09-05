@@ -35,3 +35,25 @@
 - Directives
 - Services
 - Dependency injection
+
+# ANGULAR 2 COMPONENT ==> http://learnangular2.com/components/
+설명: 컴포넌트는 페이지에 로직과 페이지에 엘리먼트를 구체화할수 있는 주요한 방법이다. 앵귤라1에서 directives, controllers, and scope를 통해서 구현하였다면 앵귤러2 에서 
+해당 컨셉은 Components로 통합되었다. 
+A SIMPLE COMPONENT
+#코드 + 설명  
+
+# ANGULAR 2 INPUTS ==> http://learnangular2.com/inputs/
+
+# ANGULAR 2 EVENTS ==> 'http://learnangular2.com/events/' 해석
+
+설명 : Angular2 에서의 이벤트는 템플릿 안에서 괄호 표현식을 사용하며 컴포턴트 클래스 안에 메소드와 연결되어 있다. 
+# 코드
+# 템플릿
+# 설명
+DELEGATION (위임)
+ - Angular2 에서의 이벤트는 일반적인 DOM이벤트와 비슷하게 동작한다. 이벤트를 상향으로 올리거나 아래로 전파할수 있으며 특별한게 없다.
+EVENT OBJECT
+ - 이벤트를 처리 할 때 '$event'라는 파라메터로 템플릿에 이벤트 콜백(함수)로 처리한다.
+ #코드 
+ #설명
+ #템플릿
