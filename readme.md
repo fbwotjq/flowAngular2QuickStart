@@ -43,9 +43,33 @@ A SIMPLE COMPONENT
 #코드 + 설명  
 
 # ANGULAR 2 INPUTS ==> http://learnangular2.com/inputs/
+설명 : 앵귤러 2 어플리케이션에서 코어는 컴포턴트들이긴 하지만 대부분 개발자들은 동적으로 설정하여 컴포넌트에 어떻게 데이터를 넣어줄지 필요할것이다. (컴포넌트 동적 프로퍼티 변경)
+@Input
+컴포넌트에 'input'을 정의하기 위해서 '@Input'표시자를 써야 한다 .
+
+# ANGULAR 2 OUTPUTS ==> http://learnangular2.com/outputs/
+설명 : 특별한 이벤트를 바인딩 할때 앵귤러 2에서는 이벤트 문법을 사용하여 처리 할 수 있지만. 필요한 커스텀 이벤트를 작성할때 @Output 지시자를 사용하면 된다. ( 이벤트 동적 바인딩 )
+
+# ANGULAR 2 APP LIFECYCLE ==> http://learnangular2.com/lifecycle/
+설명 : ANGULAR는 다단계에 걸친 기동과 lifecycle 과정을 통해 시작되며 어플리케이션이 시작/동작 컴포넌트의 생성과 소멸시 될떄 다양한 이벤트를 받을수 있다. 
+BOOTSTRAP
+ - Angular 2 어플리케이션들은 the root component를 통해 기동된다. 
+
+COMPONENT INIT
+ - 컴포넌트가 생성될떄 그것에 생성자는 호출된다. 이것은 우리에 컴포넌트를 위한 초기화 영역이다. 그러나 자식 컴포넌트부터 데이터나 속성에 의존되어 있다면 자식 컴포넌트가 먼저 초기화 하는 것을 기다려야 한다. 컴포넌트는 설정이나 어플리케이션 코드에 들어갈수 있다 컴포넌트들의 템플릿들은 전체 어플리케이션에 연결이 생성 되는 곳에 있다. 
+
+COMPONENT LIFECYCLE
+ - 
+
+# ANGULAR 2 TEMPLATES  ==> http://learnangular2.com/templates/
+설명 : 템플릿은  좀더 명확하게 작지만 많은 문법 변화가 일어났지만  앵귤라1 과 아주 흡사하다
+ - {}: RENDERING
+ - []: BINDING PROPERTIES
+ - (): HANDLING EVENTS
+ - [()]: TWO-WAY DATA BINDING
+ - *: THE ASTERISK
 
 # ANGULAR 2 EVENTS ==> 'http://learnangular2.com/events/' 해석
-
 설명 : Angular2 에서의 이벤트는 템플릿 안에서 괄호 표현식을 사용하며 컴포턴트 클래스 안에 메소드와 연결되어 있다. 
 # 코드
 # 템플릿
@@ -57,3 +81,24 @@ EVENT OBJECT
  #코드 
  #설명
  #템플릿
+
+# ANGULAR 2 FORMS ==> http://learnangular2.com/forms/
+설명 : 
+ 1) 폼은 어떤 어플리케이션에서도 기초이다. ANGULAR 2에서 ANGULAR 1에 비해서 아주 조금 변경 되었다. 
+ 2) 'ngModel'을 쓰거나 내부 값들을 매칭 할떄  Angular 2에서 명확하게 폼을 만들고 컨트롤 할수 있다. 
+ 3) While it feels like more code to write, in practice it’s easier to reason about than with v1, and we no longer have to deal with frustrating ngModel and scope data problems.
+
+ - SIMPLE FORM
+
+ - FORMBUILDER
+
+ - CONTROLGROUP
+
+ - FORM DIRECTIVES
+
+ - CUSTOM VALIDATORS
+
+ - HANDLING FORM VALUES
+
+# ANGULAR 2 VIEWCHILD ==>  http://learnangular2.com/viewChild/
+설명 : ANGULAR 2에서 모든 컴포넌트들이 클래스를 가지기 떄문에 클래스 안에 메소드를 호출한다. 
