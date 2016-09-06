@@ -101,4 +101,4 @@ EVENT OBJECT
  - HANDLING FORM VALUES
 
 # ANGULAR 2 VIEWCHILD ==>  http://learnangular2.com/viewChild/
-설명 : ANGULAR 2에서 모든 컴포넌트들이 클래스를 가지기 떄문에 클래스 안에 메소드를 호출한다. 
+설명 : ANGULAR 2에서 모든 컴포넌트들이 클래스를 가지기 떄문에 클래스 안에 메소드를 호출한다.  
