@@ -24,6 +24,47 @@ var Zippy = (function () {
             this.close.emit(null);
         }
     };
+    Zippy.prototype.ngOnInit = function () {
+        console.log("call ngOnInit in Zippy Component");
+        // Properties are resolved and things like
+        // this.mapWindow and this.mapControls
+        // had a chance to resolve from the
+        // two child components <map-window> and <map-controls>
+    };
+    Zippy.prototype.ngOnDestroy = function () {
+        console.log("call ngOnDestroy in Zippy Component");
+        // Speak now or forever hold your peace
+    };
+    Zippy.prototype.ngDoCheck = function () {
+        console.log("call ngDoCheck in Zippy Component");
+        // Custom change detection
+    };
+    Zippy.prototype.ngOnChanges = function (changes) {
+        console.log("call ngOnChanges in Zippy Component");
+        // Called right after our bindings have been checked but only
+        // if one of our bindings has changed.
+        //
+        // changes is an object of the format:
+        // {
+        //   'prop': PropertyUpdate
+        // }
+    };
+    Zippy.prototype.ngAfterContentInit = function () {
+        console.log("call ngAfterContentInit in Zippy Component");
+        // Component content has been initialized
+    };
+    Zippy.prototype.ngAfterContentChecked = function () {
+        console.log("call ngAfterContentChecked in Zippy Component");
+        // Component content has been Checked
+    };
+    Zippy.prototype.ngAfterViewInit = function () {
+        console.log("call ngAfterViewInit in Zippy Component");
+        // Component views are initialized
+    };
+    Zippy.prototype.ngAfterViewChecked = function () {
+        console.log("call ngAfterViewChecked in Zippy Component");
+        // Component views have been checked
+    };
     __decorate([
         core_1.Output(), 
         __metadata('design:type', core_1.EventEmitter)
