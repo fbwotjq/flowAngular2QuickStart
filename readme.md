@@ -105,4 +105,4 @@ EVENT OBJECT
 @ViewChild
 To get access to a component and its methods, we can use the @ViewChild annotation.
 
-For example, our <user-profile> component can have a method called sendData(). When use the user-profile on our main page, we can reference the class and then assign it to a local property. We can also do the same thing with a local variable. Instead of trying to load the particular class, we can do: 
+For example, our <user-profile> component can have a method called sendData(). When use the user-profile on our main page, we can reference the class and then assign it to a local property. We can also do the same thing with a local variable. Instead of trying to load the particular class, we can do:   -- 
