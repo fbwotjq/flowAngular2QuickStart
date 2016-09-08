@@ -63,11 +63,11 @@ COMPONENT LIFECYCLE
 
 # ANGULAR 2 TEMPLATES  ==> http://learnangular2.com/templates/
 설명 : 템플릿은  좀더 명확하게 작지만 많은 문법 변화가 일어났지만  앵귤라1 과 아주 흡사하다
- - {}: RENDERING
- - []: BINDING PROPERTIES
- - (): HANDLING EVENTS
- - [()]: TWO-WAY DATA BINDING
- - *: THE ASTERISK
+ - {}: RENDERING ==> standard double-curly syntax 값을 출력한다.
+ - []: BINDING PROPERTIES ==> component에 변수를 맵핑 하기 위해서 '[]' 문법을 사용한다. . 만약 우리에 컴포턴트에 this.currentVolume 값이 있을 때, 컴토넌트를 통해서 값을 넘겨주고 값들이 계속 동기화된다.
+ - (): HANDLING EVENTS ==> '()' 신텍스를 통해서 이벤트를 컴포넌트에서 처리할수 있다.
+ - [()]: TWO-WAY DATA BINDING ==> 다른 이벤트나 사용자의 입력을 통해서 변경을 유지하기 위해 '[()]' 문법을 사용하고 property를 연결하거나 이벤트처리에 대한 조합을 생각할수 있다.  
+ - *: THE ASTERISK ==> '*'는 template로써 directive가 component를 다룰수 있는 것을 말한다. 전처럼 그리지는 않는다. 예를 들어 'ngFor'는 <my-component> 를 취해서 아이템리스트를 출력한다. 그러나 초기화는 하지 않는다. 몇몇 비슷한 다른 directives는 template에서 *ngIf, *ngSwitch보다 더 좋게 동작한다.   * indicates that this directive treats this component as a template and will not draw it as-is. For example, ngFor takes our <my-component> and stamps it out for each item in items, but it never renders our initial <my-component> since it’s a template: Other similar directives that work on templates rather than rendered components are *ngIf and *ngSwitch.
 
 # ANGULAR 2 EVENTS ==> 'http://learnangular2.com/events/' 해석
 설명 : Angular2 에서의 이벤트는 템플릿 안에서 괄호 표현식을 사용하며 컴포턴트 클래스 안에 메소드와 연결되어 있다. 
@@ -90,15 +90,19 @@ EVENT OBJECT
 
  - SIMPLE FORM
 
- - FORMBUILDER
+ - FORMBUILDER ==> The FormBuilder from the example above makes it easy for us to specify form controls and the various validators we might want to apply to certain controls. In the example above, we are creating two inputs, an email and password field:
 
- - CONTROLGROUP
+ - CONTROLGROUP ==> The FormBuilder creates instances of ControlGroup, which we refer to as a form. Instead of using the FormBuilder, we could also construct the ControlGroup manually: In practice though, the FormBuilder is what we will use to quickly create forms.
 
- - FORM DIRECTIVES
+ - FORM DIRECTIVES ==> You’ll notice the lack of ngModel anywhere in our form. Instead, we have the ngControl decorators that map certain inputs to our control objects: This “binds” the email input to the instance of our email control.
 
- - CUSTOM VALIDATORS
+ - CUSTOM VALIDATORS ==> We can build custom form validators as a simple function: 
 
- - HANDLING FORM VALUES
+ - HANDLING FORM  ==> We can easily get the simple Javascript object value of our form, or the value of an individual control:
 
 # ANGULAR 2 VIEWCHILD ==>  http://learnangular2.com/viewChild/
-설명 : ANGULAR 2에서 모든 컴포넌트들이 클래스를 가지기 떄문에 클래스 안에 메소드를 호출한다.  
+설명 : ANGULAR 2에서 모든 컴포넌트들이 클래스를 가지기 떄문에 클래스 안에 메소드를 호출한다. 이것으로 인해 컴포넌트에 접근할수 있다. (쉽게 말해서 컴포넌트에서 컴포넌트 접근)
+@ViewChild
+To get access to a component and its methods, we can use the @ViewChild annotation.
+
+For example, our <user-profile> component can have a method called sendData(). When use the user-profile on our main page, we can reference the class and then assign it to a local property. We can also do the same thing with a local variable. Instead of trying to load the particular class, we can do: 
